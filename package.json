@@ -1,0 +1,27 @@
+{
+  "name": "node-webapi",
+  "description": "RESTful web API implement",
+  "version": "0.1.0",
+  "author": "My name sebastian.sierra1993@gmail.com",
+  "contributors": [],
+  "scripts": {
+    "code:jshint": "node_modules/jscs/bin/jshint lib/**.js test/**/**.js",
+    "code:style": "node_modules/jscs/bin/jscs *.js lib/*.js test/server/*.js",
+    "test:default": "node_modules/mocha/bin/_mocha --report lcovonly --reporter spec test --check-leaks test --timeout 10000"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^2.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-domain-middleware": "^0.1.0",
+    "express-xml-bodyparser": "^0.3.0",
+    "joi": "^10.0.6",
+    "mongoose": "^4.6.8",
+    "mongoose-relationship": "^0.1.5"
+  }
+}
